@@ -5,7 +5,7 @@
 #let cvEntry = cvEntry.with(metadata: metadata)
 
 
-#cvSection("Professional Experience")
+#cvSection("Experience")
 
 #cvEntry(
   title: [Software Developer],
