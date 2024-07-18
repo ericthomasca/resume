@@ -1,0 +1,89 @@
+language = "en"
+
+[layout]
+awesome_color = "skyblue" # Optional values: skyblue, red, nephritis, concrete, darknight
+# Skips are for controlling the spacing between sections and entries
+before_entry_description_skip = "1pt"
+before_entry_skip = "1pt"
+before_section_skip = "1pt"
+
+[layout.header]
+display_profile_photo = false # Decide if you want to display profile photo or not
+header_align = "center" # Optional values: left, center, right
+profile_photo_path = ""
+
+[layout.entry]
+display_entry_society_first = false # Decide if you want to put your company in bold or your position in bold
+display_logo = false # Decide if you want to display organisation logo or not
+
+[inject]
+inject_ai_prompt = true # Decide if you want to inject AI prompt or not
+inject_keywords = true # Decide if you want to inject keywords or not
+injected_keywords_list = [
+  "Software Developer",
+  "Full-Stack",
+  "React",
+  "ASP.NET",
+  "SQL Server",
+  "Agile",
+  "Scrum",
+  "Agile Methodology",
+  "Continuous Integration",
+  "DevOps",
+  "AWS",
+  "Azure",
+  "Cloud Computing",
+  "Linux",
+  "Docker",
+  "C#",
+  "Java",
+  "Go",
+  "JavaScript",
+  "TypeScript",
+  "Node.js",
+  "Express",
+  "MongoDB",
+  "PostgreSQL",
+  "Business Administration",
+  "Accounting",
+  "Finance",
+  "Economics",
+  "Banking",
+  "Lending",
+  "Investments",
+  "Financial Planning",
+  "Customer Service",
+  "Concierge",
+  "Digital Literacy",
+  "Technology Education",
+  "Community Outreach",
+  "Technical Support",
+  "Problem-Solving",
+  "Teamwork",
+  "Communication",
+  "Adaptability",
+  "Continuous Learning",
+  "Bash",
+  "Next.js"
+]
+
+[personal]
+first_name = "Eric"
+last_name = "Thomas"
+
+[personal.info]
+email = "eric@ericthomas.ca"
+github = "ericthomasca"
+linkedin = "ericthomasca"
+homepage = "ericthomas.ca"
+# phone = "+33 6 12 34 56 78"
+# gitlab = "mintyfrankie"
+# orcid = "0000-0000-0000-0000"
+# researchgate = "John-Doe"
+# extraInfo = "I am a cool kid"
+# custom-1 = (icon: "", text: "example", link: "https://example.com")
+
+[lang.en]
+cv_footer = "Resume"
+header_quote = "Experienced Software Developer seeking a full-time position starting immediately"
+letter_footer = "Cover letter"
