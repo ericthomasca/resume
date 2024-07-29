@@ -1,5 +1,5 @@
 // Imports
-#import "@preview/brilliant-cv:2.0.0": letter
+#import "@preview/brilliant-cv:2.0.1": letter
 #let metadata = toml("./metadata.toml")
 
 
@@ -9,8 +9,7 @@
   recipientName: "Company Name Here",
   recipientAddress: "Company Address Here",
   date: datetime.today().display(),
-  subject: "Subject: Hey!",
-  signature: image("src/signature.png"),
+  subject: "Subject: Hey!"
 )
 
 Dear Hiring Manager,

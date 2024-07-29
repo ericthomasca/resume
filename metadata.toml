@@ -5,7 +5,7 @@ awesome_color = "skyblue" # Optional values: skyblue, red, nephritis, concrete, 
 # Skips are for controlling the spacing between sections and entries
 before_entry_description_skip = "1pt"
 before_entry_skip = "2pt"
-before_section_skip = "4pt"
+before_section_skip = "6pt"
 
 [layout.header]
 display_profile_photo = false # Decide if you want to display profile photo or not
