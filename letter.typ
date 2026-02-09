@@ -1,15 +1,22 @@
 // Imports
-#import "@preview/brilliant-cv:2.0.1": letter
+#import "@preview/brilliant-cv:3.1.2": letter
 #let metadata = toml("./metadata.toml")
+#let letter-language = sys.inputs.at("language", default: none)
+#let metadata = if letter-language != none {
+  metadata + (language: letter-language)
+} else {
+  metadata
+}
 
 
 #show: letter.with(
   metadata,
-  myAddress: "Your Address Here",
-  recipientName: "Company Name Here",
-  recipientAddress: "Company Address Here",
+  sender-address: "Your Address Here",
+  recipient-name: "Company Name Here",
+  recipient-address: "Company Address Here",
   date: datetime.today().display(),
-  subject: "Subject: Hey!"
+  subject: "Subject: Hey!",
+  signature: image("assets/signature.png"),
 )
 
 Dear Hiring Manager,

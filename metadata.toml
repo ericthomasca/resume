@@ -1,24 +1,62 @@
+#:schema https://raw.githubusercontent.com/yunanwg/brilliant-CV/main/metadata.toml.schema.json
+
+# Set the output language
+# INFO: value must matches folder suffix; i.e "zh" -> "./modules_zh"
 language = "en"
 
 [layout]
-awesome_color = "skyblue" # Optional values: skyblue, red, nephritis, concrete, darknight
+# Optional values: skyblue, red, nephritis, concrete, darknight
+# You can also use a custom color by hex code i.e. "#1E90FF"
+awesome_color = "skyblue"
+
 # Skips are for controlling the spacing between sections and entries
 before_entry_description_skip = "1pt"
-before_entry_skip = "2pt"
-before_section_skip = "6pt"
+before_entry_skip = "4pt"
+before_section_skip = "10pt"
+
+# Optional: sets paper size and margins. Possible values: a4 (default), us-letter
+paper_size = "us-letter"
+
+# Optional: sets the width of the right column of a cvEntry. If not set, values known to work well are used
+#date_width = "3.6cm"
+
+# Optional: sets the font size for the content text
+#font_size = "9pt"
+
+[layout.fonts]
+header_font = "Roboto"
+regular_fonts = ["Source Sans 3"]
 
 [layout.header]
-display_profile_photo = false # Decide if you want to display profile photo or not
-header_align = "center" # Optional values: left, center, right
-profile_photo_path = ""
+# Optional values: left, center, right
+header_align = "center"
+
+# Decide if you want to display profile photo or not
+display_profile_photo = false
+# Radius in % to clip profile photo at
+info_font_size = "10pt"
+profile_photo_radius = "50%"
 
 [layout.entry]
-display_entry_society_first = false # Decide if you want to put your company in bold or your position in bold
-display_logo = false # Decide if you want to display organisation logo or not
+# Decide if you want to put your company in bold or your position in bold
+display_entry_society_first = true
+
+# Decide if you want to display organisation logo or not
+display_logo = false
+
+[layout.footer]
+# Decide if you want to display page counter or not
+display_page_counter = false
+
+# Decide if you want to display the footer or not
+display_footer = true
 
 [inject]
-inject_ai_prompt = true # Decide if you want to inject AI prompt or not
-inject_keywords = true # Decide if you want to inject keywords or not
+# Decide if you want to inject AI prompt or not
+inject_ai_prompt = true
+
+# Decide if you want to inject keywords or not
+inject_keywords = true
 injected_keywords_list = [
   "Software Developer",
   "Full-Stack",
@@ -75,25 +113,27 @@ injected_keywords_list = [
   "Continuous Learning",
   "Bash Scripting",
   "Next.js",
+  "Powerbuilder",
+  
 ]
-
 [personal]
 first_name = "Eric"
 last_name = "Thomas"
 
+# The order of this section will affect how the entries are displayed
+# The custom value is for any additional information you want to add, name it as custom-1, custom-2, etc.
 [personal.info]
 email = "eric@ericthomas.ca"
 github = "ericthomasca"
 linkedin = "ericthomasca"
 homepage = "ericthomas.ca"
-# phone = "+33 6 12 34 56 78"
-# gitlab = "mintyfrankie"
 # orcid = "0000-0000-0000-0000"
+# phone = "+33 6 12 34 56 78"
 # researchgate = "John-Doe"
-# extraInfo = "I am a cool kid"
-# custom-1 = (icon: "", text: "example", link: "https://example.com")
+location = "Corner Brook, NL, Canada"
+# extraInfo = "Available for remote work"
 
 [lang.en]
 cv_footer = "Resume"
-header_quote = "Experienced Software Developer seeking a full-time position starting immediately"
+header_quote = "Full-Stack Developer specializing in enterprise SaaS modernization, high-performance .NET architectures, and data-driven business solutions."
 letter_footer = "Cover letter"
